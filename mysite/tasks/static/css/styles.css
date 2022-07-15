@@ -16,19 +16,20 @@
 }
 
 .navbar-brand{
+    color:#b89efd;
     font-weight: bold;
 }
 
-.navbar-light .navbar-nav .nav-link{
-    color: rgb(243, 0, 0);
-    letter-spacing: 1px;
+.navbar-nav .nav-link{
+    color: #b89efd;
+    letter-spacing: 2px;
     
 }
 
 /* Botão de adicionar */
 
 .add-div {
-    background-color: #224aff;
+    background-color: #5df7c3;
     cursor: pointer;    
     display: inline-block;
     color: white;

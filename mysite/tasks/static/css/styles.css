@@ -82,7 +82,7 @@
 
 
 .fas.fa-trash {
-    color:rgb(157, 243, 214);
+    color:rgb(252, 5, 5);
     cursor: pointer;
     margin: 5px;
     font-size: 20px;
@@ -102,11 +102,11 @@ footer {
     background-color: rgb(255, 252, 239);
     padding: 20px;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
 }
 
 footer p {
-    color:rgb(157, 243, 214);
+    color:rgb(0, 248, 165);
     text-align: center;
     top: 50%;
     position: relative;

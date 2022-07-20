@@ -7,8 +7,11 @@
     <h1>Tem certeza que quer excluir {{task.title}} de forma permanente ?</h1>
     <!-- <form method="POST"> -->
         {% csrf_token %}
-        <a href="/" ><span><i class="fa-solid fa-x"></i></span></a>
-        <a href="#"><i class="fa-solid fa-check"></i></a>
-    <!-- </form> -->
+        <div class ="container">
+            <a href="/"><span><i class="fa-solid fa-x"></i></span></a> 
+            <a href="/deletereally/{{task.id}}"><span><i class="fa-solid fa-check"></i></span></a>
+
+        </div>
+        <!-- </form> -->
 </div>
 {% endblock %}

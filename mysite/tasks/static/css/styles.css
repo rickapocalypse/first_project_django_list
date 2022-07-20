@@ -80,6 +80,10 @@
     border-bottom: 1px dashed #b89efd;
 }
 
+.button-mid {
+    display: flex;
+    margin: auto;
+}
 
 .fas.fa-trash {
     color:rgb(252, 5, 5);
@@ -89,24 +93,46 @@
     float: right;
 }
 .fas.fa-edit{
-    color: rgb(89, 216, 255);
+    color: rgb(0, 189, 116);
     cursor: pointer;
     margin: 5px;
     font-size: 20px;
     float: right;
 }
 
+.form-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.fa-check {
+    color: rgb(0, 189, 116);
+    cursor: pointer;
+    margin-left: 80%;
+    font-size: 50px;
+    
+}
+
+.fa-x {
+    color: rgb(252, 5, 5);
+    cursor: pointer;
+    margin-left: 0%;
+    font-size: 50px;
+}
+
 /* Rodapé */
 
 footer {
-    background-color: rgb(255, 252, 239);
+    background-color: rgba(255, 252, 239, 0.842);
     padding: 20px;
     text-align: center;
-    color: rgb(255, 0, 0);
+    color: rgb(252, 252, 252);
 }
 
 footer p {
-    color:rgb(0, 248, 165);
+    color:rgb(0, 0, 0);
     text-align: center;
     top: 50%;
     position: relative;
@@ -120,4 +146,20 @@ ul.messages{
 
 ul.messages li {
     list-style: none;
+}
+
+/* Paginação */
+.pagination {
+    margin-bottom: 20px;
+}
+
+.step-links {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.step-links .current {
+    margin-left: 5px;
+    margin-right: 5px;
 }

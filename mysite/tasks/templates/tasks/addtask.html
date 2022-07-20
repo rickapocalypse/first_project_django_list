@@ -5,10 +5,12 @@
 {% block content %}
 <div class="offset-1 col-10 list-div ">
     <h1>Adicione a sua tarefa:</h1>
-    <form method="POST">
+    <form method="POST" class="form-center">
         {% csrf_token %}
         {{ form.as_p}}
-        <input type="submit" class="'btn btn-success" value="Criar Tarefa">
+        <div class="button-mid">
+            <button type="submit" class="btn btn-success btn-lg">Criar Tarefa</button>
+        </div>
     </form>
 </div>
 {% endblock %}

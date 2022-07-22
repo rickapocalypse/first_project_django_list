@@ -1,22 +1,21 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 
-{% block title %}Adicione Uma Tarefa{% endblock %}
+{% block title %}Registrar{% endblock %}
 
 {% block content %}
 <div class="row">
     <div class="col-md-4 offset-md-4">
         <div class="card-body">
-            <h4 class="card-title text-center">Entrar</h4>
+            <h4 class="card-title text-center">Registrar</h4>
 
             <form method="POST" class="form-center">
                 {% csrf_token %}
                 <input type="hidden" name="next" value="{{ next }}">
                 {{ form|crispy }}
-                <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                <button type="submit" class="btn btn-primary btn-block">Registrar</button>
             </form>
-
-            <p class="change-form-p">Deseja criar uma conta? <a href="/accounts/register">Clique aqui !</a></p>
+            <p class="change-form-p">Já possui conta ? <a href="/accounts/login">Clique aqui !</a></p>
         </div>
     </div>
 </div>

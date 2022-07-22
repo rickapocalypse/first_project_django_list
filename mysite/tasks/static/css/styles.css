@@ -9,7 +9,7 @@
 /* Navbar */
 
 .navbar{
-    border-bottom: 0.5px solid #b89efd;
+    border-bottom: 0.5px solid #c9e6ff;
     margin-bottom: 20px;
 
 }
@@ -20,7 +20,7 @@
 }
 
 .navbar-brand{
-    color:#b89efd;
+    color:#343a40;
     font-weight: bold;
 }
 
@@ -172,4 +172,9 @@ ul.messages li {
 
 auth-card {
     margin-bottom: 30px;
+}
+
+.change-form-p {
+    margin-top: 30px;
+    text-align: center;
 }

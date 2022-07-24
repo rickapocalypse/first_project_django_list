@@ -60,10 +60,22 @@ def editTask(request, id):
 def deleteTask(request, id):
     task = get_object_or_404(Task, pk=id)
     return render(request, 'tasks/deletetask.html', {'task': task})
+
 @login_required
 def deleteReallyTask(request, id):
     task = get_object_or_404(Task, pk=id)
     print(request)
     task.delete()
     messages.info(request, 'Task deleted!')
+    return redirect('/')
+
+@login_required
+
+def changeStatus(request, id):
+    task = get_object_or_404(Task, pk=id)
+    if task.done == 'doing':
+        task.done = 'done'
+    else:
+        task.done = 'doing'
+    task.save()
     return redirect('/')

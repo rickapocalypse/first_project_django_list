@@ -80,8 +80,13 @@
     list-style: none;
     font-size: 20px;
     height: 50px;
+    padding: 0 15px;
     padding-top: 10px;
     border-bottom: 1px dashed #b89efd;
+}
+
+.task-item.done {
+    background-color: #7d8185;
 }
 
 .button-mid {
@@ -89,7 +94,7 @@
     margin: auto;
 }
 
-.fas.fa-trash {
+.fas.fa-trash{
     color:rgb(252, 5, 5);
     cursor: pointer;
     margin: 5px;
@@ -102,6 +107,22 @@
     margin: 5px;
     font-size: 20px;
     float: right;
+}
+
+.fas.fa-check{
+    color: #7d8185;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 20px;
+    float: right
+}
+
+.done .fas.fa-check{
+    color: rgb(0, 189, 116);
+    cursor: pointer;
+    margin: 5px;
+    font-size: 20px;
+    float: right
 }
 
 .form-center {
